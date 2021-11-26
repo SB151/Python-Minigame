@@ -5,6 +5,7 @@ name=input('Player, what is your name? ').title()
 print(f'\tWelcome, {name}...prepare yourself for the worst.')
 print('\nA shadow approaches from behind, it\'s Mara the vile! Get ready!')
 
+
 health=15
 mara=15
 # Player Initiative
@@ -13,6 +14,8 @@ initiative=input('It\'s your turn, do you punch Mara or use magic? Type \'punch\
 
 #for rounds in range(3):
 while health >= 1:
+    # use random library to simulate behaviors for mara
+    # use random library to determine damage values in the game
     import random
     critical=random.randint(1,20)
     punch=random.randint(1,4)
